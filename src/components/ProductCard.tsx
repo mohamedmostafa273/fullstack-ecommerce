@@ -3,7 +3,11 @@ import { ProductsType } from '@/types'
 
 const ProductCard = ({product}: {product: ProductsType}) => {
   return (
-    <div>ProductCard</div>
+     <div>
+      <h2>{product.name}</h2>
+      <p>{product.shortDescription}</p>
+      <p>${product.price}</p>
+    </div>
   )
 }
 
