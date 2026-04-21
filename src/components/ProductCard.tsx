@@ -1,12 +1,15 @@
 import React from 'react'
 import { ProductsType } from '@/types'
 
-const ProductCard = ({product}: {product: ProductsType}) => {
+
+type props = {
+  product: ProductsType
+}
+
+const ProductCard = ({product}: props) => {
   return (
      <div>
       <h2>{product.name}</h2>
-      <p>{product.shortDescription}</p>
-      <p>${product.price}</p>
     </div>
   )
 }
